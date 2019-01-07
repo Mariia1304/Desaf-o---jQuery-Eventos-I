@@ -1,5 +1,5 @@
  $(document).ready(function() {
-     $("img").click(function() {
+     $(".images__image").click(function() {
          alert($(this).attr('alt'));
      });
  });
