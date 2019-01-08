@@ -17,24 +17,25 @@
         </ul>
         <script>
             $(document).ready(function(){
-
-        		$(".add_name").on("click", function(){
-
-        				var nombre = prompt('Por favor agrega un nombre a la lista');
-
-        				$(".names").append('<li><span>' + nombre + '</span><a class="remove_name" href=""> remove name</a></li>');
-        	   
-        		});
+                
+                $("body").on("click","a",function(event){
+                    event.preventDefault();
+                    $(this).parent('li').remove();
+                });
 
 
-        		$("body").on("click","a",function(event){
-        			event.preventDefault();
-        			$(this).parent('li').remove();
-        		});
+                $(".add_name").on("click", function(){
 
- 				
+                        var nombre = prompt('Por favor agrega un nombre a la lista');
 
-        	});
+                        $(".names").append('<li><span>' + nombre + '</span><a class="remove_name" href=""> remove name</a></li>');
+               
+                });
+
+
+                
+
+            });
         </script>
     </body>
 </html>
