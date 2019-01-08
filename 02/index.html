@@ -254,8 +254,8 @@
         </footer>
         <script>
             // Cambiar el texto que se encuentra dentro del cuarto artículo, el tercer link y que dice Snapchat. Se busca que ahora diga Pinterest y que también se le cambie el atributo href para que ahora vaya a la dirección de Pinterest (http://pinterest.com).
-            $("p:eq(6)").text("cambio de texto").css("background-color","red");
-            $("p:eq(7)").text("cambio de texto").css("background-color","red");
+            $("article:eq(3) p").text("cambio de texto").css("background-color","red");
+            
             $("article:eq(3)").css("background-color", "yellow");
             $("article:eq(3) a:eq(3)").text("Pinterest").prop("href","http://pinterest.com");
             $("article:eq(3) a:eq(2)").text("cambio de tercer link").prop("href", "");
